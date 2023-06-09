@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    // margin: 0;
+}
+$colorH1 : rgb(228, 237, 243);
+
+
+header{
+    margin: auto;
+    background-color: #49f;
+    position: relative;
+    height: 50vh;
+    width: 80vw;
+    h1{
+        color: $colorH1
+    };
+    h2{
+        color: white
+    };
+    div{
+        height: 50%;
+        background-color: rgb(122, 213, 163);
+    }
+}

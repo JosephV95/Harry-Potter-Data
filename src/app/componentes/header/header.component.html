@@ -1,0 +1,34 @@
+<header>
+    <h1>Harry potter - Howarts -Api</h1>
+    <h2>Se mostrara toda la información respecto a los personajes de Harry Potter.</h2>
+
+    <div class="textoHeader">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus harum soluta iure ipsa minima.
+            Laborum consequatur unde, accusantium similique ipsa a alias voluptas magni assumenda quaerat corrupti
+            voluptatum explicabo.
+        </p>
+    </div>
+
+</header>
+
+<section>
+    <div class="container">
+        <div class="row gap-4 justify-content-center">
+            <!-- <div class="col-12"> -->
+                <div class="card" style="width: 18rem;" *ngFor="let personaje of Personajes">
+                    <img [src]="personaje.image" class="card-img-top" [alt]="personaje.name">
+                    <div class="card-body">
+                        <h5 class="card-title">{{personaje.name}}</h5>
+                        <h6 class="card-title">{{personaje.house}}</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-text">{{personaje.actor}}</p>
+                        <p class="card-text">{{personaje.patronus}}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</section>
