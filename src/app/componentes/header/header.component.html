@@ -1,22 +1,29 @@
-<header>
-    <h1>Harry potter - Howarts -Api</h1>
-    <h2>Se mostrara toda la información respecto a los personajes de Harry Potter.</h2>
+<div id="contenedor">
 
-    <div class="textoHeader">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus harum soluta iure ipsa minima.
-            Laborum consequatur unde, accusantium similique ipsa a alias voluptas magni assumenda quaerat corrupti
-            voluptatum explicabo.
-        </p>
-    </div>
+    <header>
+        <span>
+            <img src="../../../assets/logo_Harry_Potter.png" style="height: 15rem;" alt="" srcset="">
+        </span>
+        
+        <h1>Harry potter - Howarts -Api</h1>
+        <h2>Se mostrara toda la información respecto a los personajes de Harry Potter.</h2>
 
-</header>
+        <div class="textoHeader">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus harum soluta iure ipsa
+                minima.
+                Laborum consequatur unde, accusantium similique ipsa a alias voluptas magni assumenda quaerat corrupti
+                voluptatum explicabo.
+            </p>
+        </div>
 
-<section>
-    <div class="container">
-        <div class="row gap-4 justify-content-center">
-            <!-- <div class="col-12"> -->
-                <div class="card" style="width: 18rem;" *ngFor="let personaje of Personajes">
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row gap-4 justify-content-center">
+                <!-- <div class="col-12"> -->
+                <div class="card  text-center" style="width: 18rem;" *ngFor="let personaje of Personajes">
                     <img [src]="personaje.image" class="card-img-top" [alt]="personaje.name">
                     <div class="card-body">
                         <h5 class="card-title">{{personaje.name}}</h5>
@@ -28,7 +35,9 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-            <!-- </div> -->
+                <!-- </div> -->
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+</div>

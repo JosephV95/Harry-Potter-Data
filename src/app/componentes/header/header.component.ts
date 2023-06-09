@@ -8,14 +8,19 @@ import { DataHarryPotterApiService } from 'src/app/servicios/data-harry-potter-a
 })
 export class HeaderComponent {
 
-  Personajes:any;
+  Personajes:any = [];
 
   constructor(private datosHarryP: DataHarryPotterApiService){  }
   
   ngOnInit(): void{
     this.datosHarryP.obtenerDatos().subscribe(data => {
       console.log(data[0]);
-      this.Personajes = data      
+      // this.Personajes = data      
+
+      for (let i = 0; i <= 20; i++) {
+        this.Personajes.push(data[i]);
+        
+      }
     })
   }
 
