@@ -1,11 +1,12 @@
 $colorH1 : rgb(228, 237, 243);
 
-*{
+
+* {
     box-sizing: border-box;
     // margin: 0;
 }
 
-#contenedor{
+#contenedor {
     // background-image: url("https://www.desktopbackground.org/p/2014/02/26/723008_harry-potter-wallpapers-collection-29_1920x1080_h.jpg");
     background-image: url('https://www.xtrafondos.com/wallpapers/resoluciones/23/hogwarts-legacy_1920x1080_11563.jpg');
     background-repeat: repeat-y;
@@ -13,35 +14,49 @@ $colorH1 : rgb(228, 237, 243);
     background-attachment: fixed;
 }
 
-header{
-    margin-bottom: 10px;
+header {
+    // margin-bottom: 10px;
     background-color: rgba(12, 76, 154, 0.905);
     position: relative;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 20px;
     text-align: center;
-    // height: 50vh;
-    // width: 80vw;
-    h1{
+    padding-top: 4rem;
+
+    h1 {
         color: $colorH1
-    };
-    span{
-        max-width: 100%;
-        overflow: hidden;
     }
-    // .logoImg{
-        // width: 100%;
-        img{
-            max-height: 12rem;
-            max-width: 100%;
-        }
+
+    img {
+        max-height: 12rem;
+        max-width: 100%;
+    }
+
+    // .navbar {
+    //     background-color: red;
+    //     position: sticky;
+    //     top: 0;
     // }
-    
 }
 
-section{
-    .card{
-        img{
+// .navbar-toggler{
+//    right: 1rem;
+//    height: 10px;
+// }
+nav{
+    padding: 0;
+}
+ul li{
+    // width: 250px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+
+
+}
+
+section {
+    .card {
+        img {
             height: 22rem;
             object-fit: contain;
             background-color: black;
