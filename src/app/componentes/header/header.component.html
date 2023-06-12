@@ -54,8 +54,8 @@
                         <h6 class="card-title">{{personaje.house}}</h6>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <p class="card-text">{{personaje.actor}}</p>
-                        <p class="card-text">{{personaje.patronus}}</p>
+                        <p class="card-text">Actor: {{personaje.actor}}</p>
+                        <p class="card-text" *ngIf="personaje.patronus">Patronum: {{personaje.patronus}}</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
