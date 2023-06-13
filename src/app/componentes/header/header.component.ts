@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DataHarryPotterApiService } from 'src/app/servicios/data-harry-potter-api.service';
 
 @Component({
   selector: 'app-header',
@@ -8,20 +7,8 @@ import { DataHarryPotterApiService } from 'src/app/servicios/data-harry-potter-a
 })
 export class HeaderComponent {
 
-  Personajes: any[] = [];
-
-  constructor(private datosHarryP: DataHarryPotterApiService){  }
+  constructor(){  }
   
-  ngOnInit(): void{
-    this.datosHarryP.obtenerDatos().subscribe(data => {
-      console.log(data[0]);
-      // this.Personajes = data      
-
-      for (let i = 0; i <= 20; i++) {
-        this.Personajes.push(data[i]);
-        
-      }
-    })
-  }
+  
 
 }

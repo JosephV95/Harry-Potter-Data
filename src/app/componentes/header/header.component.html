@@ -3,7 +3,7 @@
     <header class="container">
         <div class="row">
             <div class="col-12">
-                <div >
+                <div>
                     <img src="../../../assets/logo_Harry_Potter.png" alt="HPLogo">
                 </div>
                 <h1>Datos sobre personajes en Harry Potter</h1>
@@ -40,25 +40,6 @@
 
     </header>
 
-    <section>
-        <div class="container">
-            <div class="row gap-4 justify-content-center">
-                <!-- <div class="col-12"> -->
-                <div class="card  text-center" style="width: 18rem;" *ngFor="let personaje of Personajes">
-                    <img [src]="personaje.image" class="card-img-top" [alt]="personaje.name">
-                    <div class="card-body">
-                        <h5 class="card-title">{{personaje.name}}</h5>
-                        <h6 class="card-title">{{personaje.house}}</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <p class="card-text">Actor: {{personaje.actor}}</p>
-                        <p class="card-text" *ngIf="personaje.patronus">Patronum: {{personaje.patronus}}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <!-- </div> -->
-            </div>
-        </div>
-    </section>
+    
 
 </div>
