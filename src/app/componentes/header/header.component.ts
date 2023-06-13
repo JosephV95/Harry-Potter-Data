@@ -8,7 +8,7 @@ import { DataHarryPotterApiService } from 'src/app/servicios/data-harry-potter-a
 })
 export class HeaderComponent {
 
-  Personajes:any = [];
+  Personajes: any[] = [];
 
   constructor(private datosHarryP: DataHarryPotterApiService){  }
   
