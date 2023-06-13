@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CharactersComponent } from './componentes/characters/characters.component';
 import { SpellListComponent } from './componentes/spell-list/spell-list.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { AboutComponent } from './componentes/about/about.component';
 // import { NgOptimizedImage } from '@angular/common'; //Necesario para el lazy loading de las imagenes(las imagenes se iran cargando mediante el scroll este cerca - mejora el tiempo de carga de la web)
 
 
@@ -21,7 +22,8 @@ import { HomeComponent } from './componentes/home/home.component';
     FooterComponent,
     CharactersComponent,
     SpellListComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
