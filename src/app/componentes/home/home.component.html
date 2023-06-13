@@ -1,0 +1,30 @@
+
+<section>
+    <div class="container">
+        <div class="row gap-4 justify-content-center">
+            <div class="card  text-center" style="width: 18rem;" *ngFor="let personaje of Personajes">
+                <img [src]="personaje.image" class="card-img-top" [alt]="personaje.name">
+                <div class="card-body">
+                    <h5 class="card-title">{{personaje.name}}</h5>
+                    <h6 class="card-title">{{personaje.house}}</h6>
+                    <p class="card-text" *ngIf="personaje.ancestry"><i>Ascendencia:</i> {{personaje.ancestry}}</p>
+                    <!-- <p class="card-text"><i>Varita:</i> Núcleo:{{personaje.wand.core}}, Tamaño:{{personaje.wand.length}}, Madera:{{personaje.wand.wood}}</p> -->
+                    <p class="card-text"><u>Actor</u>: {{personaje.actor}}</p>
+                    <p class="card-text" *ngIf="personaje.patronus"><u>Patronum:</u> {{personaje.patronus}}</p>
+                    <!-- <ul *ngIf="personaje.wand.core.length > 0"><i>Varita:</i>
+                        <li>
+                            <p>Núcleo: {{personaje.wand.core}} </p>
+                        </li>
+                        <li>
+                            <p>Tamaño: {{personaje.wand.length}} </p>
+                        </li>
+                        <li>
+                            <p>Madera: {{personaje.wand.wood}} </p>
+                        </li>
+                    </ul> -->
+                    <a href="#" class="btn btn-primary">Más Detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+
+section {
+    margin-top: 1rem;
+    .card {
+        img {
+            height: 22rem;
+            object-fit: contain;
+            background-color: black;
+        }
+        p{
+            font-family: 'Benne', serif;
+            font-weight: bolder;
+        }
+        h5{
+            font-family: 'Benne', serif;
+        }
+    }
+}
