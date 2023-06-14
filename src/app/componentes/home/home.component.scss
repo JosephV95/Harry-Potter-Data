@@ -2,16 +2,18 @@
 section {
     margin-top: 1rem;
     .card {
+        color: white;
+        background-color: #444;
         img {
-            height: 22rem;
+            height: 21rem;
             object-fit: contain;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0);
         }
         p{
             font-family: 'Benne', serif;
-            font-weight: bolder;
+            // font-weight: bolder;
         }
-        h5{
+        h3{
             font-family: 'Benne', serif;
         }
         .card-body{
@@ -20,5 +22,18 @@ section {
             flex-direction: column;
             justify-content: space-between;
         }
+    }
+    .Gryffindor{
+        background-color: #9c0a2e;
+        
+    }
+    .Slytherin{
+        background-color: #0e5c3c;
+    }
+    .Ravenclaw{
+        background-color: #1d476f;
+    }
+    .Hufflepuff{
+        background-color: #e79408;
     }
 }

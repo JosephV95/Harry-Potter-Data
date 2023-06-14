@@ -2,10 +2,10 @@
 <section>
     <div class="container">
         <div class="row gap-4 justify-content-center">
-            <div class="card  text-center" style="width: 18rem;" *ngFor="let personaje of Personajes">
+            <div class="card  text-center" style="width: 18rem;" *ngFor="let personaje of Personajes" [class]="personaje.house">
                 <img [src]="personaje.image" class="card-img-top" [alt]="personaje.name">
                 <div class="card-body">
-                    <h5 class="card-title">{{personaje.name}}</h5>
+                    <h3 class="card-title">{{personaje.name}}</h3>
                     <h6 class="card-title">{{personaje.house}}</h6>
                     <p class="card-text" *ngIf="personaje.ancestry"><i>Ascendencia:</i> {{personaje.ancestry}}</p>
                     <!-- <p class="card-text"><i>Varita:</i> Núcleo:{{personaje.wand.core}}, Tamaño:{{personaje.wand.length}}, Madera:{{personaje.wand.wood}}</p> -->

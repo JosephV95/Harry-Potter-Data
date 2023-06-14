@@ -17,7 +17,7 @@ export class HomeComponent {
       console.log(data[0]);
       // this.Personajes = data      
 
-      for (let i = 0; i <= 20; i++) {
+      for (let i = 0; i <= 33; i++) {
         this.Personajes.push(data[i]);
         
       }
