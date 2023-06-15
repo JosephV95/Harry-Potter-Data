@@ -1,44 +1,53 @@
 
 section {
     margin-top: 1rem;
+
     .card {
         color: white;
         background-color: #444;
+
         img {
             height: 21rem;
             object-fit: contain;
             background-color: rgba(0, 0, 0, 0);
         }
-        p{
+
+        p {
             font-family: 'Benne', serif;
             // font-weight: bolder;
         }
-        h3{
+
+        h3 {
             font-family: 'Benne', serif;
         }
-        .card-body{
+
+        .card-body {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: space-between;
         }
-        &:hover{
-            box-shadow: 0 5px 5px white, 0 -5px 15px yellow, 5px 0 15px #48e, -5px 0px 35px #f55;
+        transition-duration: .7s;
+        &:hover {
+            box-shadow: 0 5px 15px #37e, 0 -5px 15px #37e, 5px 0 15px #37e;
         }
-        transition-duration: .8s;
+
+        
     }
-    .Gryffindor{
+
+    .Gryffindor {
         background-color: #9c0a2e;
-        
-        
     }
-    .Slytherin{
+
+    .Slytherin {
         background-color: #0e5c3c;
     }
-    .Ravenclaw{
+
+    .Ravenclaw {
         background-color: #1d476f;
     }
-    .Hufflepuff{
+
+    .Hufflepuff {
         background-color: #e79408;
     }
 }
