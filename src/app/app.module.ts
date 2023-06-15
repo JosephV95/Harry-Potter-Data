@@ -12,6 +12,7 @@ import { CharactersComponent } from './componentes/characters/characters.compone
 import { SpellListComponent } from './componentes/spell-list/spell-list.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { AboutComponent } from './componentes/about/about.component';
+import { ImageDefaultDirective } from './directivas/image-default.directive';
 // import { NgOptimizedImage } from '@angular/common'; //Necesario para el lazy loading de las imagenes(las imagenes se iran cargando mediante el scroll este cerca - mejora el tiempo de carga de la web)
 
 
@@ -23,7 +24,8 @@ import { AboutComponent } from './componentes/about/about.component';
     CharactersComponent,
     SpellListComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ImageDefaultDirective
   ],
   imports: [
     BrowserModule,

@@ -22,9 +22,14 @@ section {
             flex-direction: column;
             justify-content: space-between;
         }
+        &:hover{
+            box-shadow: 0 5px 5px white, 0 -5px 15px yellow, 5px 0 15px #48e, -5px 0px 35px #f55;
+        }
+        transition-duration: .8s;
     }
     .Gryffindor{
         background-color: #9c0a2e;
+        
         
     }
     .Slytherin{
