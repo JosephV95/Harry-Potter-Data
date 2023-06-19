@@ -12,10 +12,9 @@ export class DataHarryPotterApiService {
   
   urlApi = 'assets/dataAPI/harryApi.json';
   
-
   constructor(private httpApi:HttpClient) { }
 
-  obtenerDatos(): Observable<any>{
+  obtenerPersonajes(): Observable<any>{
 
     console.log("Todo esta funcionando");
 
