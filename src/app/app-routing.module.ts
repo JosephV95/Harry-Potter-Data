@@ -12,7 +12,8 @@ const routes: Routes = [
   {path:'characters', component:CharactersComponent},
   {path:'spells', component:SpellListComponent},
   {path:'about', component:AboutComponent},
-  {path:'detail/:id', component:DetallePersComponent}
+  {path:'detail/:id', component:DetallePersComponent},
+  // {path:'**', component:AboutComponent},   terminar para elcrear la pagina 404
 ];
 
 @NgModule({
