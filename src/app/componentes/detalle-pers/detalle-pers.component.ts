@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { DataHarryPotterApiService } from 'src/app/servicios/data-harry-potter-api.service';
 
 @Component({
   selector: 'app-detalle-pers',
@@ -7,4 +9,29 @@ import { Component } from '@angular/core';
 })
 export class DetallePersComponent {
 
+  id:string = '';
+  personaje:any ={} ;
+  constructor(private rutaId: ActivatedRoute, private datosHP: DataHarryPotterApiService){}
+
+  ngOnInit():void {
+    // ? con esto obtendria el valor de id que vendria en la url
+    this.id = this.rutaId.snapshot.params['id'];
+    
+       
+    this.datosHP.obtenerPersonajes().subscribe(data=>{
+
+      data.forEach((persona:any) => {
+        if(persona.id == this.id){
+          // console.log(persona);
+          this.personaje = persona
+        }
+      });
+    })
+
+    //? Esto seria para trabajar con la url de la api pero falta completarla y averiguar más, ademas no aparecerian las img que yo les puse a las cards
+    // this.datosHP.buscarPersonaje(this.id).subscribe(data => {
+    //   console.log(data);
+    //   this.personaje = data
+    // }) 
+  }
 }

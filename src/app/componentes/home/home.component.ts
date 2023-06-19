@@ -13,8 +13,8 @@ export class HomeComponent {
   constructor(private datosHarryP: DataHarryPotterApiService){  }
 
   ngOnInit(): void{
-    this.datosHarryP.obtenerDatos().subscribe(data => {
-      console.log(data[0]);
+    this.datosHarryP.obtenerPersonajes().subscribe(data => {
+      // console.log(data[0]);
       // this.Personajes = data      
 
       for (let i = 0; i <= 33; i++) {
