@@ -17,23 +17,18 @@
                                 <p *ngIf="personaje.actor"><b>Actor:</b> {{personaje.actor}}</p>
                                 <p *ngIf="personaje.alternate_actors != 0"><b>Alternate Actors:</b>
                                     {{personaje.alternate_actors}}</p>
+                                
+                                    <!--! Para que no salten errores se aplico los Operadores And y Or en el ngIf, y tambien para que solo les aparesca a los magos que muestran los datos de su varita-->
+                                <p *ngIf="personaje.wizard && (personaje.wand.core || personaje.wand.wood)"><b>Wand:</b>  
+                                    <li *ngIf="personaje.wand.core">Core: {{personaje.wand.core}}</li>
+                                    <li *ngIf="personaje.wand.wood">Wood: {{personaje.wand.wood}}</li>
+                                    <li *ngIf="personaje.wand.length">Length: {{personaje.wand.length}}</li>
+                                </p>
                                 <p *ngIf="personaje.patronus"><b>Patronus:</b> {{personaje.patronus}}</p>
                                 <p *ngIf="personaje.species"><b>Species:</b> {{personaje.species}}</p>
                                 <p *ngIf="personaje.gender"><b>Gender:</b> {{personaje.gender}}</p>
                                 <p *ngIf="personaje.wizard"><b>Wizard:</b> {{personaje.wizard}}</p>
                                 <p *ngIf="personaje.ancestry"><b>Ancestry:</b> {{personaje.ancestry}}</p>
-
-                                <!-- <p>Wand: </p>
-                                <div>
-                                    <p>core: {{personaje.wand.core}}</p>
-                                    <p>wood: {{personaje.wand.wood}}</p>
-                                    <p>lenght: {{personaje.wand.length}}</p>
-                                </div> -->
-                                <p *ngIf="personaje.wand"><b>Wand:</b>
-                                    <li>Core: {{personaje.wand.core}}</li>
-                                    <li>Wood: {{personaje.wand.wood}}</li>
-                                    <li>Length: {{personaje.wand.length}}</li>
-                                </p>
                                 <p *ngIf="personaje.eyeColour"><b>Eye Colour:</b> {{personaje.eyeColour}}</p>
                                 <p *ngIf="personaje.hairColour"><b>Hair Colour:</b> {{personaje.hairColour}}</p>
                                 <p *ngIf="personaje.dateOfBirth"><b>Date Of Birth:</b> {{personaje.dateOfBirth}}</p>
