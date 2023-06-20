@@ -1,16 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Old+Standard+TT&family=Tangerine:wght@700&display=swap');
+
 .card{
     background-color: rgba(0, 0, 0, 0.85);
     h2, h4{
         text-align: center;
+        font-family: 'Benne', serif;
     }
+    font-family: 'Old Standard TT', serif;;
+    .imgCard{
+        display: flex;
+        justify-content: center;
 
+        img{
+            max-width: 300px;
+        }
+    }
 }
 
 @media only screen and (min-width: 540px) {
     .card{
-        p{
-            display: inline-block;
-            width: 50%;
+        h2, h4{
+            text-align: start;
         }
+        .card-text{
+            max-height: 400px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding-top: .7rem;
+
+            p{
+                display: inline-block;
+                width: 50%;
+            }
+        }
+        
     }
 }

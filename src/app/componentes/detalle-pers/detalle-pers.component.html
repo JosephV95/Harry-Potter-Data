@@ -1,35 +1,34 @@
 <section>
     <div class="container">
         <div class="row  m-center justify-content-center">
-            <div class="card border-primary text-white mb-3 mt-3 p-3"
-                style="max-width: 100%; font-size: 1.1rem; ">
+            <div class="card border-primary text-white mb-3 mt-3 p-3" style="max-width: 100%; font-size: 1.12rem; ">
                 <div class="row g-3 ">
-                    <div class="col-md-4 align-self-center">
-                        <img [src]="personaje.image" class="align-self-center" style="width:100%;  "
-                            alt="img${eventoDetail._id}">
+                    <div class="col-md-4 align-self-center imgCard ">
+                        <img [src]="personaje.image" appImageDefault class="align-self-center" style="width:100%; "
+                            [alt]="personaje.name">
                     </div>
                     <div class="col-md-8 ">
                         <div class="card-body ">
                             <h2 class="card-title ">{{personaje.name}}</h2>
-                            <h4>{{personaje.house}}</h4>
-                            <p class="card-text"><b><u>dateOfBirth</u>:</b> {{personaje.dateOfBirth}}</p>
-                            <p class="card-text"><b><u>alternate_names</u>:</b> {{personaje.alternate_names}}</p>
-                            <p class="card-text"><b><u>species</u>:</b> {{personaje.species}}</p>
-                            <p class="card-text"><b><u>gender</u>:</b> {{personaje.gender}}</p>
-                            <p class="card-text"><b><u>yearOfBirth</u>:</b> {{personaje.yearOfBirth}}</p>
-                            <p class="card-text"><b><u>wizard</u>:</b> {{personaje.wizard}}</p>
-                            <p class="card-text"><b><u>ancestry</u>:</b> {{personaje.ancestry}}</p>
-                            <p class="card-text"><b><u>eyeColour</u>:</b> {{personaje.eyeColour}}</p>
-                            <p class="card-text"><b><u>hairColour</u>:</b> {{personaje.hairColour}}</p>
-
-                            <!-- <p class="card-text"><b><u>wand</u>:</b> <span><li>{{personaje.wand.core}}</li></span> </p>  -->
-                            <p class="card-text"><b><u>patronus</u>:</b> {{personaje.patronus}}</p>
-                            <p class="card-text"><b><u>hogwartsStudent</u>:</b> {{personaje.hogwartsStudent}}</p>
-                            <p class="card-text"><b><u>hogwartsStaff</u>:</b> {{personaje.hogwartsStaff}}</p>
-                            <p class="card-text"><b><u>actor</u>:</b> {{personaje.actor}}</p>
-                            <p class="card-text"><b><u>alternate_actors</u>:</b> {{personaje.alternate_actors}}</p>
-                            <p class="card-text"><b><u>alive</u>:</b> {{personaje.alive}}</p>
-
+                            <h4 class="card-title ">{{personaje.house}}</h4>
+                            <div class="card-text">
+                                <p *ngIf="personaje.alternate_names != 0"><b>Alternate Names:</b> {{personaje.alternate_names}}</p>
+                                <p *ngIf="personaje.actor"><b>Actor:</b> {{personaje.actor}}</p>
+                                <p *ngIf="personaje.alternate_actors != 0"><b>Alternate Actors:</b> {{personaje.alternate_actors}}</p>
+                                <p *ngIf="personaje.patronus"><b>Patronus:</b> {{personaje.patronus}}</p>
+                                <p *ngIf="personaje.species"><b>Species:</b> {{personaje.species}}</p>
+                                <p *ngIf="personaje.gender"><b>Gender:</b> {{personaje.gender}}</p>
+                                <p *ngIf="personaje.wizard"><b>Wizard:</b> {{personaje.wizard}}</p>
+                                <p *ngIf="personaje.ancestry"><b>Ancestry:</b> {{personaje.ancestry}}</p>
+                                <p *ngIf="personaje.eyeColour"><b>Eye Colour:</b> {{personaje.eyeColour}}</p>
+                                <p *ngIf="personaje.hairColour"><b>Hair Colour:</b> {{personaje.hairColour}}</p>
+                                <p *ngIf="personaje.dateOfBirth"><b>Date Of Birth:</b> {{personaje.dateOfBirth}}</p>
+                                <p *ngIf="personaje.yearOfBirth"><b>Year Of Birth:</b> {{personaje.yearOfBirth}}</p>
+                                <p *ngIf="personaje.alive"><b>Alive:</b> {{personaje.alive}}</p>
+                                <!-- <p ><b>wand:</b> <span><li>{{personaje.wand.core}}</li></span> </p>  -->
+                                <!-- <p ><b>hogwartsStudent:</b> {{personaje.hogwartsStudent}}</p>
+                            <p ><b>hogwartsStaff:</b> {{personaje.hogwartsStaff}}</p> -->
+                            </div>
                         </div>
                     </div>
                 </div>
