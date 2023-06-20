@@ -1,9 +1,39 @@
-<p>detalle-pers works!</p>
-<!-- <div *ngIf="personaje"> -->
-<h1 style="color: white;" > {{personaje.name}}</h1>
-<h3 style="color: white;">{{personaje.house}}</h3>
-<!-- </div> -->
-<!-- <h3>{{personaje.name}}</h3>
-<h3>{{personaje.name}}</h3>
-<h3>{{personaje.name}}</h3>
-<h3>{{personaje.name}}</h3> -->
+<section>
+    <div class="container">
+        <div class="row  m-center justify-content-center">
+            <div class="card border-primary text-white mb-3 mt-3 p-3"
+                style="max-width: 100%; font-size: 1.1rem; ">
+                <div class="row g-3 ">
+                    <div class="col-md-4 align-self-center">
+                        <img [src]="personaje.image" class="align-self-center" style="width:100%;  "
+                            alt="img${eventoDetail._id}">
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="card-body ">
+                            <h2 class="card-title ">{{personaje.name}}</h2>
+                            <h4>{{personaje.house}}</h4>
+                            <p class="card-text"><b><u>dateOfBirth</u>:</b> {{personaje.dateOfBirth}}</p>
+                            <p class="card-text"><b><u>alternate_names</u>:</b> {{personaje.alternate_names}}</p>
+                            <p class="card-text"><b><u>species</u>:</b> {{personaje.species}}</p>
+                            <p class="card-text"><b><u>gender</u>:</b> {{personaje.gender}}</p>
+                            <p class="card-text"><b><u>yearOfBirth</u>:</b> {{personaje.yearOfBirth}}</p>
+                            <p class="card-text"><b><u>wizard</u>:</b> {{personaje.wizard}}</p>
+                            <p class="card-text"><b><u>ancestry</u>:</b> {{personaje.ancestry}}</p>
+                            <p class="card-text"><b><u>eyeColour</u>:</b> {{personaje.eyeColour}}</p>
+                            <p class="card-text"><b><u>hairColour</u>:</b> {{personaje.hairColour}}</p>
+
+                            <!-- <p class="card-text"><b><u>wand</u>:</b> <span><li>{{personaje.wand.core}}</li></span> </p>  -->
+                            <p class="card-text"><b><u>patronus</u>:</b> {{personaje.patronus}}</p>
+                            <p class="card-text"><b><u>hogwartsStudent</u>:</b> {{personaje.hogwartsStudent}}</p>
+                            <p class="card-text"><b><u>hogwartsStaff</u>:</b> {{personaje.hogwartsStaff}}</p>
+                            <p class="card-text"><b><u>actor</u>:</b> {{personaje.actor}}</p>
+                            <p class="card-text"><b><u>alternate_actors</u>:</b> {{personaje.alternate_actors}}</p>
+                            <p class="card-text"><b><u>alive</u>:</b> {{personaje.alive}}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

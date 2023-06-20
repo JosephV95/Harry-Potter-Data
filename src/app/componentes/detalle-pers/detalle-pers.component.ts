@@ -11,6 +11,7 @@ export class DetallePersComponent {
 
   id:string = '';
   personaje:any ={} ;
+  keys:any
   constructor(private rutaId: ActivatedRoute, private datosHP: DataHarryPotterApiService){}
 
   ngOnInit():void {
@@ -22,8 +23,9 @@ export class DetallePersComponent {
 
       data.forEach((persona:any) => {
         if(persona.id == this.id){
-          // console.log(persona);
-          this.personaje = persona
+          console.log(Object.keys(persona));  //! Metodo para obtener las keys(claves) de un objeto
+          this.personaje = persona;
+          this.keys = Object.keys(persona)
         }
       });
     })
