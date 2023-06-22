@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataHarryPotterApiService } from 'src/app/servicios/data-harry-potter-api.service';
+import { Location } from '@angular/common'
 
 @Component({
   selector: 'app-detalle-pers',
@@ -11,8 +12,9 @@ export class DetallePersComponent {
 
   id:string = '';
   personaje:any ={} ;
-  keys:any
-  constructor(private rutaId: ActivatedRoute, private datosHP: DataHarryPotterApiService){}
+  // keys:any
+  
+  constructor(private rutaId: ActivatedRoute, private datosHP: DataHarryPotterApiService, private location: Location){}
 
   ngOnInit():void {
     // ? con esto obtendria el valor de id que vendria en la url
@@ -23,9 +25,9 @@ export class DetallePersComponent {
 
       data.forEach((persona:any) => {
         if(persona.id == this.id){
-          console.log(Object.keys(persona));  //! Metodo para obtener las keys(claves) de un objeto
+          // console.log(Object.keys(persona));  //! Metodo para obtener las keys(claves) de un objeto
           this.personaje = persona;
-          this.keys = Object.keys(persona)
+          // this.keys = Object.keys(persona)
         }
       });
     })
@@ -35,5 +37,10 @@ export class DetallePersComponent {
     //   console.log(data);
     //   this.personaje = data
     // }) 
+  }
+
+  volverAtras(){
+  //?  metodo especial en Angular (se debe importar Location de angular/common), en JS seria window.history.back() 
+    this.location.back()
   }
 }
