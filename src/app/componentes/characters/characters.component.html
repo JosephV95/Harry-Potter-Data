@@ -1,1 +1,19 @@
-<p>characters works!</p>
+
+<section>
+    <div class="container">
+        <div class="row gap-4 justify-content-center">
+            <div class="card  text-center" style="width: 18rem;" *ngFor="let personaje of Personajes" [ngClass]="personaje.house">
+                <img [src]="personaje.image" appImageDefault  class="card-img-top" [alt]="personaje.name">
+                <div class="card-body">
+                    <h3 class="card-title">{{personaje.name}}</h3>
+                    <h5 class="card-title">{{personaje.house}}</h5>
+                    <p class="card-text" *ngIf="personaje.actor"><b>Actor:</b>: {{personaje.actor}}</p>
+                    <p class="card-text" *ngIf="personaje.ancestry"><b>Ascendencia:</b> {{personaje.ancestry}}</p>
+                    <p class="card-text" *ngIf="personaje.patronus"><b>Patronum:</b> {{personaje.patronus}}</p>
+                    <!-- <input type="text" name="url" id="PerUrl" [(ngModel)]="personaje.name"> -->
+                    <a routerLink="/detail/{{personaje.id}}" class="btn btn-primary">Más Detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

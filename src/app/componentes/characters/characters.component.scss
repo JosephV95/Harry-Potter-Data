@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Old+Standard+TT&family=Tangerine:wght@700&display=swap');
+
+section {
+    margin-top: 1rem;
+
+    .card {
+        color: white;
+        background-color: #444;
+
+        img {
+            height: 21rem;
+            object-fit: contain;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        p {
+            font-family: 'Benne', serif;
+            // font-weight: bolder;
+        }
+
+        h3 {
+            font-family: 'Benne', serif;
+        }
+
+        .card-body {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        transition-duration: .7s;
+        &:hover {
+            box-shadow: 0 5px 15px #37e, 0 -5px 15px #37e, 5px 0 15px #37e;
+        }
+    }
+
+    .Gryffindor {
+        background-color: #9c0a2e;
+    }
+
+    .Slytherin {
+        background-color: #0e5c3c;
+    }
+
+    .Ravenclaw {
+        background-color: #1d476f;
+    }
+
+    .Hufflepuff {
+        background-color: #e79408;
+    }
+}
