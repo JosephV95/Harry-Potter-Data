@@ -9,7 +9,7 @@ $colorH1 : white;
 
 header {
     // margin-bottom: 10px;
-    background-color: rgba(8, 45, 91, 0.585);
+    background-image: linear-gradient( to right, rgba(246, 255, 0, 0.712), rgba(8, 45, 91, 0.585)); //
     position: relative;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -41,6 +41,23 @@ nav{
             font-family: 'Benne', serif;
         }
     } 
+}
+
+@media only screen and (min-width:640px){
+    #divHeader{
+        display: flex;
+        align-items: center;
+        #logo{
+            display: inline-block;
+            width: 40%;
+        } 
+        h1 {
+            display: inline-block;
+            width: 60%;
+            text-align: start;
+            padding-left: 2rem;
+        }
+    }
 }
 
 
