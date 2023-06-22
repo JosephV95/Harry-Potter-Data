@@ -6,21 +6,11 @@
                 <img [src]="personaje.image" appImageDefault  class="card-img-top" [alt]="personaje.name">
                 <div class="card-body">
                     <h3 class="card-title">{{personaje.name}}</h3>
-                    <h6 class="card-title">{{personaje.house}}</h6>
-                    <p class="card-text" *ngIf="personaje.ancestry"><i>Ascendencia:</i> {{personaje.ancestry}}</p>
-                    <p class="card-text"><u>Actor</u>: {{personaje.actor}}</p>
-                    <p class="card-text" *ngIf="personaje.patronus"><u>Patronum:</u> {{personaje.patronus}}</p>
-                    <!-- <ul *ngIf="personaje.wand.core.length > 0"><i>Varita:</i>
-                        <li>
-                            <p>Núcleo: {{personaje.wand.core}} </p>
-                        </li>
-                        <li>
-                            <p>Tamaño: {{personaje.wand.length}} </p>
-                        </li>
-                        <li>
-                            <p>Madera: {{personaje.wand.wood}} </p>
-                        </li>
-                    </ul> -->
+                    <h5 class="card-title">{{personaje.house}}</h5>
+                    <p class="card-text"><b>Ascendencia:</b> {{personaje.ancestry}}</p>
+                    <p class="card-text"><b>Actor:</b>: {{personaje.actor}}</p>
+                    <p class="card-text" *ngIf="personaje.patronus"><b>Patronum:</b> {{personaje.patronus}}</p>
+                    
                     <a routerLink="/detail/{{personaje.id}}" class="btn btn-primary">Más Detalles</a>
                 </div>
             </div>
