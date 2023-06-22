@@ -14,6 +14,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { AboutComponent } from './componentes/about/about.component';
 import { ImageDefaultDirective } from './directivas/image-default.directive';
 import { DetallePersComponent } from './componentes/detalle-pers/detalle-pers.component';
+import { FormsModule } from '@angular/forms';
 // import { NgOptimizedImage } from '@angular/common'; //Necesario para el lazy loading de las imagenes(las imagenes se iran cargando mediante el scroll este cerca - mejora el tiempo de carga de la web)
 
 
@@ -34,6 +35,7 @@ import { DetallePersComponent } from './componentes/detalle-pers/detalle-pers.co
     AppRoutingModule,
     HttpClientModule,
     // NgOptimizedImage
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
