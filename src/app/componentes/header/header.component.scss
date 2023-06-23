@@ -9,7 +9,7 @@ $colorH1 : white;
 
 header {
     // margin-bottom: 10px;
-    background-image: linear-gradient( to right, rgba(246, 255, 0, 0.712), rgba(8, 45, 91, 0.585)); //
+    background-image: radial-gradient(circle, rgba(239, 239, 239, 0.71) 10%, rgba(59, 190, 242, 0.87) 48%, rgba(0, 0, 0, 0.69) 80%);
     position: relative;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -21,7 +21,7 @@ header {
         color: $colorH1;
         font-family: 'Tangerine', cursive;
         font-size: 3rem;
-        text-shadow: 0px 0px 10px rgb(21, 157, 242), 0px 0px 10px rgb(21, 220, 242),0px 0px 10px rgb(21, 220, 242);
+        text-shadow: 0px 0px 10px rgb(0, 119, 247), 0px 0px 10px rgb(0, 119, 247),0px 0px 10px rgb(0, 119, 247);
     }
     img {
         max-height: 11rem;
