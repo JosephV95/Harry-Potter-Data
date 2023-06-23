@@ -21,17 +21,17 @@
                 <div class="collapse navbar-collapse  display-flex justify-content-center " id="navbarTogglerDemo02">
                     <div id="listanav ">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+                            <li class="nav-item">       <!--!   con routerLinkActive de angular el nav cambiara automaticamente el active (en sus button o a)-->
+                                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" routerLink="/characters">Personajes</a>
+                                <a class="nav-link" routerLink="/characters" routerLinkActive="active">Personajes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" routerLink="/spells">Lista de Hechizos</a>
+                                <a class="nav-link" routerLink="/spells" routerLinkActive="active">Lista de Hechizos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" routerLink="/about">Sobre la Web</a>
+                                <a class="nav-link" routerLink="/about" routerLinkActive="active">Sobre la Web</a>
                             </li>
                         </ul>
                     </div>
