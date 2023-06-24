@@ -1,0 +1,18 @@
+section{
+    box-sizing: border-box;
+}
+.car{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    .cardImg{
+        width: 10%;
+    }
+    .card-text{
+        width: 90%;
+    }
+    background: transparent;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 0%, rgba(29, 111, 253, 0.764) 50%, rgba(0,0,0,0.5) 100%);
+}

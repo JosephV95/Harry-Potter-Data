@@ -1,1 +1,20 @@
-<p>spell-list works!</p>
+<section>
+    <div class="container">
+        <div class="row ">
+            <div class="car col-md-6" *ngFor="let hechizo of Hechizos">
+                <div class="cardImg">
+                    <img src="../../../assets/wandHP.png" class="card-img-left"alt="varita" style="height: 8rem;">
+
+                </div>
+                <div class="card-text">
+                    <h2>{{hechizo.name}}</h2>
+                    <p>{{hechizo.description}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="card">
+
+    </div>
+</section>
