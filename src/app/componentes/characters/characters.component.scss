@@ -81,17 +81,57 @@ section {
 
     .Gryffindor {
         background-color: #9c0a2e;
+        .card-body{
+            button{
+                &::after{
+                    background-color: #9c0a2e;
+                }
+                &::before{
+                    background-color: #9c0a2e;
+                }
+            }
+        }
     }
 
     .Slytherin {
         background-color: #0e5c3c;
+        .card-body{
+            button{
+                &::after{
+                    background-color: #0e5c3c;
+                }
+                &::before{
+                    background-color: #0e5c3c;
+                }
+            }
+        }
     }
 
     .Ravenclaw {
         background-color: #1d476f;
+        .card-body{
+            button{
+                &::after{
+                    background-color: #1d476f;
+                }
+                &::before{
+                    background-color: #1d476f;
+                }
+            }
+        }
     }
 
     .Hufflepuff {
         background-color: #e79408;
+        .card-body{
+            button{
+                &::after{
+                    background-color: #e79408;
+                }
+                &::before{
+                    background-color: #e79408;
+                }
+            }
+        }
     }
 }
