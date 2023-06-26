@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Benne&family=Old+Standard+TT&family=Tangerine:wght@700&display=swap');
 
+section{
+    min-height: 75vh;
+}
 .card{
     background-color: rgba(0, 0, 0, 0.85);
     h2, h4{
