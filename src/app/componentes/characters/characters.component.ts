@@ -10,6 +10,8 @@ export class CharactersComponent {
 
   Personajes :any[] =[];
 
+  p:number = 1;
+
   constructor(private datosHP: DataHarryPotterApiService){}
 
   ngOnInit(){
