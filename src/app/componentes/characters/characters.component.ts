@@ -10,7 +10,7 @@ export class CharactersComponent {
 
   Personajes :any[] =[];
 
-  p:number = 1;
+  p:number = 1;  //* Variable usada para la paginación
 
   constructor(private datosHP: DataHarryPotterApiService){}
 

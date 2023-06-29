@@ -16,6 +16,7 @@ section {
 
         p {
             font-family: 'Benne', serif;
+            margin-bottom: .3rem;
             // font-weight: bolder;
         }
 
@@ -29,7 +30,8 @@ section {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            button{
+
+            button {
                 width: 10em;
                 height: 3em;
                 position: relative;
@@ -41,7 +43,7 @@ section {
                 font-weight: bold;
                 transition: 1s;
 
-                &::after{
+                &::after {
                     content: "";
                     position: absolute;
                     top: -8px;
@@ -52,7 +54,8 @@ section {
                     transition: .5s;
                     transform-origin: center;
                 }
-                &::before{
+
+                &::before {
                     content: "";
                     position: absolute;
                     top: 80%;
@@ -63,18 +66,23 @@ section {
                     transition: .5s;
                     transform-origin: center;
                 }
+
                 // &:hover::after, &:hover::before{
                 //     transform: scale(0);
                 // }
-                &:hover{
+                &:hover {
                     box-shadow: inset 0 0 25px #1479EA;
-                    &::after, &::before{
+
+                    &::after,
+                    &::before {
                         transform: scale(0);
                     }
                 }
             }
         }
+
         transition-duration: .7s;
+
         &:hover {
             box-shadow: 0 0px 15px #d3e2e8, 0 0px 20px #69ccf2, 0px 0 25px #01aff3, 0px 0 25px #01aff3;
         }
@@ -82,12 +90,14 @@ section {
 
     .Gryffindor {
         background-color: #9c0a2e;
-        .card-body{
-            button{
-                &::after{
+
+        .card-body {
+            button {
+                &::after {
                     background-color: #9c0a2e;
                 }
-                &::before{
+
+                &::before {
                     background-color: #9c0a2e;
                 }
             }
@@ -96,12 +106,14 @@ section {
 
     .Slytherin {
         background-color: #0e5c3c;
-        .card-body{
-            button{
-                &::after{
+
+        .card-body {
+            button {
+                &::after {
                     background-color: #0e5c3c;
                 }
-                &::before{
+
+                &::before {
                     background-color: #0e5c3c;
                 }
             }
@@ -110,12 +122,14 @@ section {
 
     .Ravenclaw {
         background-color: #1d476f;
-        .card-body{
-            button{
-                &::after{
+
+        .card-body {
+            button {
+                &::after {
                     background-color: #1d476f;
                 }
-                &::before{
+
+                &::before {
                     background-color: #1d476f;
                 }
             }
@@ -124,15 +138,46 @@ section {
 
     .Hufflepuff {
         background-color: #e79408;
-        .card-body{
-            button{
-                &::after{
+
+        .card-body {
+            button {
+                &::after {
                     background-color: #e79408;
                 }
-                &::before{
+
+                &::before {
                     background-color: #e79408;
                 }
             }
         }
     }
+
+    .Mago {
+        background-color: #670289;
+
+        .card-body {
+            button {
+                &::after {
+                    background-color: #670289;
+                }
+
+                &::before {
+                    background-color: #670289;
+                }
+            }
+        }
+    }
+
+    pagination-controls {
+        background-image: linear-gradient(to bottom, rgba(2, 95, 201, 0.8) 30%, rgba(0, 0, 0, 0.278) 90%);
+        color: rgb(168, 165, 165);
+        font-size: 1.15rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    pagination-controls a:hover{
+        color: black;
+    }
+   
+    
 }
