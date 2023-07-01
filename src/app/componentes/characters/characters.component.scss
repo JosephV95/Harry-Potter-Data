@@ -178,6 +178,16 @@ section {
     pagination-controls a:hover{
         color: black;
     }
-   
-    
+  
+    .categorias{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.564);
+        label{
+            margin: 0 10px;
+        }
+
+    }
 }
