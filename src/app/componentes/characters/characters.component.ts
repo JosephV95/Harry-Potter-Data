@@ -8,10 +8,10 @@ import { DataHarryPotterApiService } from 'src/app/servicios/data-harry-potter-a
 })
 export class CharactersComponent {
 
-  Personajes :any[] =[];
+  Personajes :any[] = [];
+  BackupPersonajes:any[] = [];
 
   p:number = 1;  //* Variable usada para la paginación
-
 
   categorias:any[] =[];
 
@@ -19,8 +19,13 @@ export class CharactersComponent {
 
   ngOnInit(){
     this.datosHP.obtenerPersonajes().subscribe(data =>{
-      this.Personajes = data
+      this.Personajes = data;
+      this.BackupPersonajes = data;
+      
     })
+  }
+  ngOnChanges(){
+    // this.cargarCards()
   }
 
   categActiva(evento:any){
@@ -31,5 +36,12 @@ export class CharactersComponent {
       this.categorias = this.categorias.filter(ev => ev != evento.target.value)
     }
     console.log(this.categorias);
+
+    if (this.categorias.length > 0) {
+      this.Personajes = this.BackupPersonajes.filter(pers => this.categorias.includes(pers.house ) )
+    } else {
+      this.Personajes = this.BackupPersonajes;
+    }
+    // console.log(this.Personajes);
   }
 }
