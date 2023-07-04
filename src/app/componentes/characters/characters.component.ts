@@ -12,12 +12,24 @@ export class CharactersComponent {
 
   p:number = 1;  //* Variable usada para la paginación
 
+
+  categorias:any[] =[];
+
   constructor(private datosHP: DataHarryPotterApiService){}
 
   ngOnInit(){
     this.datosHP.obtenerPersonajes().subscribe(data =>{
       this.Personajes = data
     })
+  }
 
+  categActiva(evento:any){
+    // console.log(evento.target.checked);
+    if (evento.target.checked) {
+      this.categorias.push(evento.target.value)
+    } else {
+      this.categorias = this.categorias.filter(ev => ev != evento.target.value)
+    }
+    console.log(this.categorias);
   }
 }
