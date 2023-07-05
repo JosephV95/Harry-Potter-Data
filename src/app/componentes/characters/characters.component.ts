@@ -21,12 +21,11 @@ export class CharactersComponent {
     this.datosHP.obtenerPersonajes().subscribe(data =>{
       this.Personajes = data;
       this.BackupPersonajes = data;
-      
     })
   }
-  ngOnChanges(){
-    // this.cargarCards()
-  }
+  // ngOnChanges(){
+  //   this.Personajes
+  // }
 
   categActiva(evento:any){
     // console.log(evento.target.checked);
@@ -36,12 +35,20 @@ export class CharactersComponent {
       this.categorias = this.categorias.filter(ev => ev != evento.target.value)
     }
     console.log(this.categorias);
+    this.p = 1  //* Esto hara que seleccionar o no un categoria vuelva a la pagination 1
 
     if (this.categorias.length > 0) {
-      this.Personajes = this.BackupPersonajes.filter(pers => this.categorias.includes(pers.house ) )
+      if (this.categorias.includes("otras") ) {
+        this.Personajes = this.BackupPersonajes.filter(pers => this.categorias.includes(pers.house) || (!pers.house && pers.wizard))
+      } else{
+        this.Personajes = this.BackupPersonajes.filter(pers => this.categorias.includes(pers.house ) )
+      }
     } else {
       this.Personajes = this.BackupPersonajes;
     }
+    // if(this.categorias.includes('otras')){
+    //   this.Personajes = this.BackupPersonajes.filter(pers => !pers.house && pers.wizard )
+    // }
     // console.log(this.Personajes);
   }
 }
