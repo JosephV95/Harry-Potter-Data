@@ -34,7 +34,7 @@ export class CharactersComponent {
     } else {
       this.categorias = this.categorias.filter(ev => ev != evento.target.value)
     }
-    console.log(this.categorias);
+    // console.log(this.categorias);
     this.p = 1  //* Esto hara que seleccionar o no un categoria vuelva a la pagination 1
 
     if (this.categorias.length > 0) {
@@ -46,9 +46,7 @@ export class CharactersComponent {
     } else {
       this.Personajes = this.BackupPersonajes;
     }
-    // if(this.categorias.includes('otras')){
-    //   this.Personajes = this.BackupPersonajes.filter(pers => !pers.house && pers.wizard )
-    // }
+    
     // console.log(this.Personajes);
   }
 }
