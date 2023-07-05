@@ -175,19 +175,37 @@ section {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    pagination-controls a:hover{
+
+    pagination-controls a:hover {
         color: black;
     }
-  
-    .categorias{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+
+    .menuCategorias {
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // flex-wrap: wrap;
         color: white;
-        background-color: rgba(0, 0, 0, 0.564);
-        label{
-            margin: 0 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 5px 0;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        border: outset 2px rgba(255, 255, 255, 0.682);
+        label {
+            margin: 0 5px;
+            // display: inline;
         }
+
+        #categorias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .catItem {
+                display: inline;
+            }
+        }
+
 
     }
 }
