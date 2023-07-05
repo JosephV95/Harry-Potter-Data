@@ -15,6 +15,8 @@ export class CharactersComponent {
 
   categorias:any[] =[];
 
+  inputSearch:string = "";
+
   constructor(private datosHP: DataHarryPotterApiService){}
 
   ngOnInit(){
@@ -39,14 +41,23 @@ export class CharactersComponent {
 
     if (this.categorias.length > 0) {
       if (this.categorias.includes("otras") ) {
-        this.Personajes = this.BackupPersonajes.filter(pers => this.categorias.includes(pers.house) || (!pers.house && pers.wizard))
+        this.Personajes = this.filtroSearch().filter(pers => this.categorias.includes(pers.house) || (!pers.house && pers.wizard))
       } else{
-        this.Personajes = this.BackupPersonajes.filter(pers => this.categorias.includes(pers.house ) )
+        this.Personajes = this.filtroSearch().filter(pers => this.categorias.includes(pers.house ) )
       }
     } else {
-      this.Personajes = this.BackupPersonajes;
+      this.Personajes = this.filtroSearch();
     }
     
     // console.log(this.Personajes);
+  }
+
+  filtroSearch(){
+    let primerFiltro = this.BackupPersonajes.filter(ev =>
+      ev.name.toLowerCase().includes(this.inputSearch.toLowerCase())
+    )
+    console.log(primerFiltro);
+
+    return primerFiltro
   }
 }
