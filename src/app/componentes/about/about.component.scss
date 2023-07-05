@@ -2,13 +2,17 @@
 
 section{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     font-family: 'Macondo', cursive;
     padding-top: 2rem ;
-
+    padding-bottom: 1rem;
     .container{
         background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 15%, black 50%, rgba(0, 0, 0, 0.5) 85%);
+        border-radius: 30px;
+        padding: 2rem 1.5rem;
+        box-shadow: inset 0 0 20px #019bb9, inset 0 0 40px rgb(57, 174, 247);
+        border: inset 3px #00d5ff;
     }
     
     min-height: 65vh;
