@@ -5,56 +5,55 @@
                 <div class="form-check form-switch catItem">
                     <label for="house1" class="form-check-label">
                         <input type="checkbox" class="form-check-input" role="switch" name="Gryffindor" id="house1"
-                            value="Gryffindor" (input)="categActiva($event)">Gryffindor
+                            value="Gryffindor" (input)="categActiva($event)" [checked]="categorias.includes('Gryffindor')">Gryffindor
                     </label>
                 </div>
                 <div class="form-check form-switch catItem">
                     <label for="house2">
                         <input type="checkbox" class="form-check-input" role="switch" name="Slytherin" id="house2"
-                            value="Slytherin" (input)="categActiva($event)">Slytherin
+                            value="Slytherin" (input)="categActiva($event)" [checked]="categorias.includes('Slytherin')">Slytherin
                     </label>
                 </div>
                 <div class="form-check form-switch catItem">
                     <label for="house3">
                         <input type="checkbox" class="form-check-input" role="switch" name="Hufflepuff" id="house3"
-                            value="Hufflepuff" (input)="categActiva($event)">Hufflepuff
+                            value="Hufflepuff" (input)="categActiva($event)" [checked]="categorias.includes('Hufflepuff')">Hufflepuff
                     </label>
                 </div>
                 <div class="form-check form-switch catItem">
                     <label for="house4">
                         <input type="checkbox" class="form-check-input" role="switch" name="Ravenclaw" id="house4"
-                            value="Ravenclaw" (input)="categActiva($event)">Ravenclaw
+                            value="Ravenclaw" (input)="categActiva($event)" [checked]="categorias.includes('Ravenclaw')">Ravenclaw
                     </label>
                 </div>
                 <div class="form-check form-switch catItem">
                     <label for="house5">
                         <input type="checkbox" class="form-check-input" role="switch" name="Otras" id="house5"
-                            value="otras" (input)="categActiva($event)">Otras casas
+                            value="otras" (input)="categActiva($event)" [checked]="categorias.includes('otras')">Otras casas
                     </label>
                 </div>
 
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2 d-flex justify-content-center">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Más categorias..
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Muggles</a></li>
-                    <li><a class="dropdown-item" href="#">Otras especies</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><button class="dropdown-item" (click)="catMuggles()">Muggles</button></li>
+                    <li><button class="dropdown-item" (click)="catOtrasEsp()" >Otras especies</button></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3  justify-content-center">
                 <input type="text" class="form-control" name="" id="" placeholder="Search name"
-                    [(ngModel)]="inputSearch" (keyup)="categActiva($event)">
+                    [(ngModel)]="inputSearch" (keyup)="filtroSearch()">
             </div>
         </div>
     </div>
 
     <div class="container">
         <span class=" d-flex justify-content-center">
-            <pagination-controls (pageChange)="p = $event" previousLabel="Prev"></pagination-controls>
+            <pagination-controls class="my-pagination" (pageChange)="p = $event" previousLabel="Prev"></pagination-controls>
         </span>
         <div *ngIf="Personajes.length == 0" class="d-flex justify-content-center text-center" style="min-height: 44vh;">
             <h2  style="color: white; font-size: 3rem; text-shadow: 0 0 15px #0eb858, 0 0 20px #12f575;  padding-top: 3rem;">No hay resultados de su busqueda</h2>

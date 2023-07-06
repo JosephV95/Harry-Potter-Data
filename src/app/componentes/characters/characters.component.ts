@@ -14,7 +14,6 @@ export class CharactersComponent {
   p:number = 1;  //* Variable usada para la paginación
 
   categorias:any[] =[];
-
   inputSearch:string = "";
 
   constructor(private datosHP: DataHarryPotterApiService){}
@@ -25,9 +24,6 @@ export class CharactersComponent {
       this.BackupPersonajes = data;
     })
   }
-  // ngOnChanges(){
-  //   this.Personajes
-  // }
 
   categActiva(evento:any){
     // console.log(evento.target.checked);
@@ -42,22 +38,33 @@ export class CharactersComponent {
     if (this.categorias.length > 0) {
       if (this.categorias.includes("otras") ) {
         this.Personajes = this.filtroSearch().filter(pers => this.categorias.includes(pers.house) || (!pers.house && pers.wizard))
-      } else{
+      }
+       else{
         this.Personajes = this.filtroSearch().filter(pers => this.categorias.includes(pers.house ) )
       }
     } else {
       this.Personajes = this.filtroSearch();
     }
-    
     // console.log(this.Personajes);
   }
 
+  //*  el filtro por search se guardo en una función para que pueda ser usado para otro tipo de categorias a futuro, por eso no guardo como una variable dentro de categActiva(),   
   filtroSearch(){
     let primerFiltro = this.BackupPersonajes.filter(ev =>
       ev.name.toLowerCase().includes(this.inputSearch.toLowerCase())
     )
-    console.log(primerFiltro);
+    // console.log(primerFiltro);
+    
+    return this.Personajes = primerFiltro
+  }
 
-    return primerFiltro
+  catMuggles(){
+    this.categorias = [] //? Con esto se desmarcaran los checkbox de las casas
+    this.Personajes = this.BackupPersonajes.filter(per => !per.wizard && per.species == 'human')
+  }
+
+  catOtrasEsp(){
+    this.categorias = [] //? Con esto se desmarcaran los checkbox de las casas
+    this.Personajes = this.BackupPersonajes.filter(per => per.species != 'human')
   }
 }
