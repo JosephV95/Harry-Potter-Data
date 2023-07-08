@@ -15,7 +15,7 @@ export class HomeComponent {
   ngOnInit(): void{
     this.datosHarryP.obtenerPersonajes().subscribe(data => {   
 
-      for (let i = 0; i <= 19; i++) {
+      for (let i = 0; i <= 16; i++) {
         this.Personajes.push(data[i]);
         
       }

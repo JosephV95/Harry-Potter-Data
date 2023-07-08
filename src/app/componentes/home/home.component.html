@@ -8,12 +8,15 @@
                     <h3 class="card-title">{{personaje.name}}</h3>
                     <h5 class="card-title">{{personaje.house}}</h5>
                     <p class="card-text" *ngIf="personaje.actor"><b>Actor:</b> {{personaje.actor}}</p>
-                    <p class="card-text" *ngIf="personaje.ancestry"><b>Ancestry:</b> {{personaje.ancestry}}</p>
+                    <p class="card-text" *ngIf="personaje.ancestry"><b>Ascendencia:</b> {{personaje.ancestry}}</p>
                     <p class="card-text" *ngIf="personaje.patronus"><b>Patronus:</b> {{personaje.patronus}}</p>
                     <!-- <input type="text" name="url" id="PerUrl" [(ngModel)]="personaje.name"> -->
-                    <button routerLink="/detail/{{personaje.id}}" class="btn ">More Details</button>
+                    <button routerLink="/detail/{{personaje.id}}" class="btn ">Más Detalles...</button>
                 </div>
             </div>
+        </div>
+        <div class="row justify-content-center">
+            <button id="btnTodosPers" routerLink="/characters" style="width: 20rem; margin-top: 1rem;"><b>Ver todos los personajes...</b></button>
         </div>
     </div>
 </section>
