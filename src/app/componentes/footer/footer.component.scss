@@ -1,22 +1,22 @@
 footer {
     background-color: black;
-    display: flex;
+    // display: flex;
     // align-items: center;
     border-top: solid 2px #1d476f;
     font-size: 1.2rem;
     padding-top: 3px;
 
+    p {
+        color: white;
+        text-align: center;
+    }
     .itemSocial{
-        margin-left: 1rem;
+        margin-left: .6rem;
+        display: inline-block;
         a{
             text-decoration: none;
             color: white;
         }
-    }
-
-    p {
-        color: white;
-        text-align: center;
     }
 
 }
