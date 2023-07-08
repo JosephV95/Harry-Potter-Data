@@ -1,13 +1,10 @@
 footer {
     background-color: black;
     display: flex;
-    
-    border-top: solid 2px blue;
+    // align-items: center;
+    border-top: solid 2px #1d476f;
     font-size: 1.2rem;
-
-    .row{
-        justify-content: space-around;
-    }
+    padding-top: 3px;
 
     .itemSocial{
         margin-left: 1rem;
