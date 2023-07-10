@@ -3,7 +3,7 @@
         <div class="row gap-3 justify-content-center">
             <div class="card  text-center" style="width: 15.5rem; height: 33rem;" *ngFor="let personaje of Personajes"
                 [ngClass]="personaje.house">
-                <img [src]="personaje.image" appImageDefault class="card-img-top" [alt]="personaje.name">
+                <img [src]="personaje.image" appImageDefault class="card-img-top" [alt]="'Img de '+personaje.name">
                 <div class="card-body">
                     <div class="tituloCard">
                         <h4 class="card-title">{{personaje.name}}</h4>
