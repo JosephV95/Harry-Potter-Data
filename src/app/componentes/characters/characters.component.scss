@@ -213,6 +213,14 @@ section {
 
             .catItem {
                 display: inline;
+                padding-left: 0;
+                input{
+                    height: 15px;
+                    width: 33px;
+                    margin-left: 3px;
+                    margin-right: 2px;
+                
+                }
             }
         }
     }
