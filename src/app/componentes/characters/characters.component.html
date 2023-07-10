@@ -61,8 +61,8 @@
 
         <div class="row gap-3 justify-content-center">
             <!--? Pipe paginate que lograra la paginacion de la importación ngx pagination  -->
-            <div class="card  text-center" style="width: 15.5rem; height: 33rem;"
-                *ngFor="let personaje of Personajes | paginate: { itemsPerPage: 16, currentPage: p }"
+            <div class="card  text-center" style="width: 15.5rem; max-height: 33rem;"
+                *ngFor="let personaje of Personajes | paginate: { itemsPerPage: 20, currentPage: p }"
                 [ngClass]="{'Mago': personaje.wizard && !personaje.house}" [class]="personaje.house">
                 <img [src]="personaje.image" appImageDefault class="card-img-top" [alt]="'Img de '+personaje.name">
                 <div class="card-body">
