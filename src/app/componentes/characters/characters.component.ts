@@ -11,10 +11,15 @@ export class CharactersComponent {
   Personajes :any[] = [];
   BackupPersonajes:any[] = [];
 
+  //? Controles adicionales para la pagination 
   p:number = 1;  //* Variable usada para la paginación
+  responsive:boolean = true;
+  maxSize:number = 5;
+  autoHide:boolean = true;
 
   categorias:any[] =[];
   inputSearch:string = "";
+  
 
   constructor(private datosHP: DataHarryPotterApiService){}
 
