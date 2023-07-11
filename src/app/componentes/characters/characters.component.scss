@@ -2,7 +2,7 @@
 
 section {
     margin-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 
     .card {
         color: white;
@@ -172,16 +172,17 @@ section {
     }
 
     pagination-controls {
-        background-image: linear-gradient(to bottom, #f8ae2ddb 40%, rgba(0, 0, 0, 0.278) 70%);
+        // background-image: linear-gradient(to bottom, #f1f0edee 60%, rgba(0, 0, 0, 0.278) 100%);
+        background-image: url(../../../assets/fondo_pagination.png);
+        background-size: auto;
+        background-repeat: no-repeat;
         color: rgba(0, 0, 0, 0.9);
         font-size: 1.15rem;
         font-family: 'Old Standard TT', serif;
-        // height: 35px;
-
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin-bottom: 5px;
-        border-radius: 15px;
+        height: 35px;
+        // border-bottom-left-radius: 20px;
+        // border-bottom-right-radius: 20px;
+        margin-top: 15px;
         padding-right: 2rem;
     }
     // .my-pagination ::ng-deep .ngx-pagination .current {
@@ -197,7 +198,7 @@ section {
         padding: 5px 0;
         border-radius: 10px;
         margin-bottom: 5px;
-        border: solid 3px #0e5c3c;
+        border: inset 3px #9c0a2e;
         font-family: 'Benne', serif;
         font-size: 1.2rem;
 
