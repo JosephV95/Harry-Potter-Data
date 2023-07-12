@@ -71,12 +71,12 @@ export class CharactersComponent {
   catMuggles(){
     this.categorias = [] //? Con esto se desmarcaran los checkbox de las casas
     this.inputSearch = "" //? Hara que el input search este vacio
-    this.Personajes = this.BackupPersonajes.filter(per => !per.wizard && per.species == 'human')
+    this.Personajes = this.BackupPersonajes.filter(per => !per.wizard && per.species == 'humano')
   }
 
   catOtrasEsp(){
     this.categorias = [] //? Con esto se desmarcaran los checkbox de las casas
     this.inputSearch = "" //? Hara que el input search este vacio
-    this.Personajes = this.BackupPersonajes.filter(per => per.species != 'human')
+    this.Personajes = this.BackupPersonajes.filter(per => per.species != 'humano')
   }
 }
