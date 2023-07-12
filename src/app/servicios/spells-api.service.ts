@@ -7,9 +7,9 @@ import { Injectable } from '@angular/core';
 export class SpellsAPIService {
 
   //? ruta para el backup local de la api 
-  // urlSpells = 'assets/dataAPI/spellsApi.json'
+  urlSpells = 'assets/dataAPI/spellsApiES.json'
 
-  urlSpells = 'https://hp-api.onrender.com/api/spells'
+  // urlSpells = 'https://hp-api.onrender.com/api/spells'
   
   constructor(private httpSpells: HttpClient) { }
 
