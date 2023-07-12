@@ -12,28 +12,29 @@
                             <h2 class="card-title ">{{personaje.name}}</h2>
                             <h4 class="card-title ">{{personaje.house}}</h4>
                             <div class="card-text">
-                                <p *ngIf="personaje.alternate_names != 0"><b>Alternate Names:</b>
+                                <p *ngIf="personaje.alternate_names != 0"><b>Nombres Alternativos:</b>
                                     {{personaje.alternate_names}}</p>
                                 <p *ngIf="personaje.actor"><b>Actor:</b> {{personaje.actor}}</p>
-                                <p *ngIf="personaje.alternate_actors != 0"><b>Alternate Actors:</b>
+                                <p *ngIf="personaje.alternate_actors != 0"><b>Actores Alternativos:</b>
                                     {{personaje.alternate_actors}}</p>
                                 
                                     <!--! Para que no salten errores se aplico los Operadores And y Or en el ngIf, y tambien para que solo les aparesca a los magos que muestran los datos de su varita-->
-                                <p *ngIf="personaje.wizard && (personaje.wand.core || personaje.wand.wood)"><b>Wand:</b>  
-                                    <li *ngIf="personaje.wand.core">Core: {{personaje.wand.core}}</li>
-                                    <li *ngIf="personaje.wand.wood">Wood: {{personaje.wand.wood}}</li>
-                                    <li *ngIf="personaje.wand.length">Length: {{personaje.wand.length}}</li>
+                                <p *ngIf="personaje.wizard && (personaje.wand.core || personaje.wand.wood)"><b>Varita:</b>  
+                                    <li *ngIf="personaje.wand.core">Núcleo: {{personaje.wand.core}}</li>
+                                    <li *ngIf="personaje.wand.wood">Madera: {{personaje.wand.wood}}</li>
+                                    <li *ngIf="personaje.wand.length">Longitud: {{personaje.wand.length}}</li>
                                 </p>
                                 <p *ngIf="personaje.patronus"><b>Patronus:</b> {{personaje.patronus}}</p>
-                                <p *ngIf="personaje.species"><b>Species:</b> {{personaje.species}}</p>
-                                <p *ngIf="personaje.gender"><b>Gender:</b> {{personaje.gender}}</p>
-                                <p *ngIf="personaje.wizard"><b>Wizard:</b> {{personaje.wizard}}</p>
-                                <p *ngIf="personaje.ancestry"><b>Ancestry:</b> {{personaje.ancestry}}</p>
-                                <p *ngIf="personaje.eyeColour"><b>Eye Colour:</b> {{personaje.eyeColour}}</p>
-                                <p *ngIf="personaje.hairColour"><b>Hair Colour:</b> {{personaje.hairColour}}</p>
-                                <p *ngIf="personaje.dateOfBirth"><b>Date Of Birth:</b> {{personaje.dateOfBirth}}</p>
-                                <p *ngIf="personaje.yearOfBirth"><b>Year Of Birth:</b> {{personaje.yearOfBirth}}</p>
-                                <p *ngIf="personaje.alive"><b>Alive:</b> {{personaje.alive}}</p>
+                                <p *ngIf="personaje.species"><b>Especie:</b> {{personaje.species}}</p>
+                                <p *ngIf="personaje.gender"><b>Género:</b> {{personaje.gender}}</p>
+                                <p *ngIf="personaje.wizard == true"><b>¿Es Mago?:</b> Verdadero</p>
+                                <p *ngIf="personaje.wizard == false"><b>¿Es Mago?:</b> Falso</p>
+                                <p *ngIf="personaje.ancestry"><b>Ascendencia:</b> {{personaje.ancestry}}</p>
+                                <p *ngIf="personaje.eyeColour"><b>Color de Ojos:</b> {{personaje.eyeColour}}</p>
+                                <p *ngIf="personaje.hairColour"><b>Color de Pelo:</b> {{personaje.hairColour}}</p>
+                                <p *ngIf="personaje.dateOfBirth"><b>Fecha de Nacimiento:</b> {{personaje.dateOfBirth}}</p>
+                                <!-- <p *ngIf="personaje.yearOfBirth"><b>Year Of Birth:</b> {{personaje.yearOfBirth}}</p> -->
+                                <p *ngIf="personaje.alive"><b>¿Con vida?:</b> {{personaje.alive}}</p>
                                 <!-- <p ><b>hogwartsStudent:</b> {{personaje.hogwartsStudent}}</p>
                                 <p ><b>hogwartsStaff:</b> {{personaje.hogwartsStaff}}</p> -->
                             </div>
