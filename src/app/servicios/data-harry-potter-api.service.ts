@@ -10,7 +10,7 @@ export class DataHarryPotterApiService {
   // Url original de la API, se copiara sus datos en json para ahorar recursos y trabajar de forma local
   // urlApi = 'https://hp-api.onrender.com/api/characters';
   
-  urlApi = 'assets/dataAPI/harryApi.json/';
+  urlApi = 'assets/dataAPI/harryApiES.json/';
   
   constructor(private httpApi:HttpClient) { }
 
