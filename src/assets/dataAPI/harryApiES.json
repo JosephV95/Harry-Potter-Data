@@ -20,7 +20,7 @@
     "core": "phoenix feather",
     "length": 11
     },
-    "patronus": "stag",
+    "patronus": "ciervo",
     "hogwartsStudent": true,
     "hogwartsStaff": false,
     "actor": "Daniel Radcliffe",
@@ -46,7 +46,7 @@
     "core": "dragon heartstring",
     "length": 10.75
     },
-    "patronus": "otter",
+    "patronus": "nutria",
     "hogwartsStudent": true,
     "hogwartsStaff": false,
     "actor": "Emma Watson",
@@ -126,7 +126,7 @@
     "core": "dragon heartstring",
     "length": 9.5
     },
-    "patronus": "tabby cat",
+    "patronus": "gato atigrado",
     "hogwartsStudent": false,
     "hogwartsStaff": true,
     "actor": "Dame Maggie Smith",
@@ -178,7 +178,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "swan",
+    "patronus": "cisne",
     "hogwartsStudent": true,
     "hogwartsStaff": false,
     "actor": "Katie Leung",
@@ -206,7 +206,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "doe",
+    "patronus": "cierva",
     "hogwartsStudent": false,
     "hogwartsStaff": true,
     "actor": "Alan Rickman",
@@ -258,7 +258,7 @@
     "core": "unicorn tail-hair",
     "length": 13
     },
-    "patronus": "Non-Corporeal",
+    "patronus": "No corpóreo",
     "hogwartsStudent": true,
     "hogwartsStaff": false,
     "actor": "Matthew Lewis",
@@ -284,7 +284,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "hare",
+    "patronus": "liebre",
     "hogwartsStudent": true,
     "hogwartsStaff": false,
     "actor": "Evanna Lynch",
@@ -310,7 +310,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "horse",
+    "patronus": "caballo",
     "hogwartsStudent": true,
     "hogwartsStaff": false,
     "actor": "Bonnie Wright",
@@ -339,7 +339,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "hare",
+    "patronus": "liebre",
     "hogwartsStudent": false,
     "hogwartsStaff": false,
     "actor": "Gary Oldman",
@@ -372,7 +372,7 @@
     "core": "unicorn tail-hair",
     "length": 10.25
     },
-    "patronus": "wolf",
+    "patronus": "lobo",
     "hogwartsStudent": false,
     "hogwartsStaff": true,
     "actor": "David Thewlis",
@@ -398,7 +398,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "weasel",
+    "patronus": "comadreja",
     "hogwartsStudent": false,
     "hogwartsStaff": false,
     "actor": "Mark Williams",
@@ -506,7 +506,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "lynx",
+    "patronus": "lince",
     "hogwartsStudent": false,
     "hogwartsStaff": false,
     "actor": "George Harris",
@@ -532,7 +532,7 @@
     "core": "dragon heartstring",
     "length": 8
     },
-    "patronus": "persian cat",
+    "patronus": "gata persa",
     "hogwartsStudent": false,
     "hogwartsStaff": true,
     "actor": "Imelda Staunton",
@@ -766,7 +766,7 @@
     "core": "",
     "length": 10.25
     },
-    "patronus": "",
+    "patronus": "cierva",
     "hogwartsStudent": false,
     "hogwartsStaff": false,
     "actor": "Geraldine Somerville",
@@ -794,7 +794,7 @@
     "core": "",
     "length": 11
     },
-    "patronus": "stag",
+    "patronus": "ciervo",
     "hogwartsStudent": false,
     "hogwartsStaff": false,
     "actor": "Adrian Rawlins",
@@ -3665,7 +3665,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "boar",
+    "patronus": "jabalí",
     "hogwartsStudent": true,
     "hogwartsStaff": false,
     "actor": "Louis Doyle",
@@ -6761,7 +6761,7 @@
     "core": "",
     "length": null
     },
-    "patronus": "goat",
+    "patronus": "cabra",
     "hogwartsStudent": false,
     "hogwartsStaff": false,
     "actor": "Jim McManus",
