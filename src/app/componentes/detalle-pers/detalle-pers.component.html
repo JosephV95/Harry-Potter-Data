@@ -34,7 +34,8 @@
                                 <p *ngIf="personaje.hairColour"><b>Color de Pelo:</b> {{personaje.hairColour}}</p>
                                 <p *ngIf="personaje.dateOfBirth"><b>Fecha de Nacimiento:</b> {{personaje.dateOfBirth}}</p>
                                 <!-- <p *ngIf="personaje.yearOfBirth"><b>Year Of Birth:</b> {{personaje.yearOfBirth}}</p> -->
-                                <p *ngIf="personaje.alive"><b>¿Con vida?:</b> {{personaje.alive}}</p>
+                                <p *ngIf="personaje.alive == true"><b>Estado:</b> con vida</p>
+                                <p *ngIf="personaje.alive == false"><b>Estado:</b> fallecido</p>
                                 <!-- <p ><b>hogwartsStudent:</b> {{personaje.hogwartsStudent}}</p>
                                 <p ><b>hogwartsStaff:</b> {{personaje.hogwartsStaff}}</p> -->
                             </div>
