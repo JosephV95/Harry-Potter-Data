@@ -22,13 +22,14 @@ section {
             align-items: center;
             padding: 3px 3px 8px 3px;
 
-            .tituloCard{
+            .tituloCard {
                 h4 {
                     font-family: 'Benne', serif;
                     padding-top: 8px;
                     margin-bottom: 2px;
                 }
             }
+
             p {
                 font-family: 'Benne', serif;
                 margin: 5px 0;
@@ -185,6 +186,7 @@ section {
         margin-top: 15px;
         padding-right: 2rem;
     }
+
     // .my-pagination ::ng-deep .ngx-pagination .current {
     //     background: red;
     //     &:hover{
@@ -215,14 +217,76 @@ section {
             .catItem {
                 display: inline;
                 padding-left: 0;
-                input{
+
+                input {
                     height: 15px;
                     width: 33px;
                     margin-left: 3px;
                     margin-right: 2px;
-                
+
                 }
             }
+        }
+    }
+
+    .modal-content {
+        background-color: rgba(0, 0, 0, 0.834);
+        color: white;
+        border: solid 2px rgb(24, 119, 221);
+
+        .modal-header {
+            padding: 5px 10px;
+
+            h1 {
+                width: 100%;
+                text-align: center;
+            }
+
+            button {
+                height: 2rem;
+                padding: 0 10px;
+            }
+        }
+
+        .modal-body {
+            padding: 0;
+
+
+            .detallesModal {
+                background-color: rgb(39, 38, 38);
+                font-family: 'Old Standard TT',
+                    serif;
+
+                &:hover {
+                    box-shadow: none;
+                }
+
+                .imgCard {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        max-width: 300px;
+                        object-fit: contain;
+                    }
+                }
+
+                .detallesModal-body {
+
+                    .detallesModal-title {
+                        text-align: center;
+                        font-family: 'Benne', serif;
+                    }
+
+                    .detallesModal-text {
+                        p {
+                            margin: .5rem;
+                        }
+                    }
+                }
+            }
+
+
         }
     }
 }
