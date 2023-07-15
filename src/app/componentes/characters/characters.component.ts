@@ -79,4 +79,12 @@ export class CharactersComponent {
     this.inputSearch = "" //? Hara que el input search este vacio
     this.Personajes = this.BackupPersonajes.filter(per => per.species != 'humano')
   }
+
+  PersonajeModal:any = {}
+
+  detallePers(persona:object){
+    console.log(this.PersonajeModal);
+    this.PersonajeModal = persona
+    
+  }
 }
