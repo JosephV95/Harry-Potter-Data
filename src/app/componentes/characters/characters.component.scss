@@ -232,19 +232,23 @@ section {
     .modal-content {
         background-color: rgba(0, 0, 0, 0.834);
         color: white;
-        border: double 5px rgb(24, 119, 221);
+        border: outset 3.3px rgb(0, 97, 200);
 
         .modal-header {
+            font-family: 'Benne', serif;
             padding: 5px 10px;
+            border-bottom: solid 2px rgb(2, 175, 255);
 
             h1 {
                 width: 100%;
                 text-align: center;
+                margin: 0;
             }
 
             button {
                 height: 2rem;
-                padding: 0 10px;
+                padding: .3rem 12px;
+                // border: solid 2px;
             }
         }
 
@@ -259,6 +263,7 @@ section {
                 .imgModal {
                     display: flex;
                     justify-content: center;
+                    align-items: center;
 
                     img {
                         max-width: 330px;
