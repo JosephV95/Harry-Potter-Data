@@ -77,12 +77,12 @@
                     <p class="card-text" *ngIf="personaje.actor"><b>Actor:</b> {{personaje.actor}}</p>
                     <p class="card-text" *ngIf="personaje.ancestry"><b>Ascendencia:</b> {{personaje.ancestry}}</p>
                     <p class="card-text" *ngIf="personaje.patronus"><b>Patronus:</b> {{personaje.patronus}}</p>
-                    <button (click)="detallePers(personaje)" class="btn "  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Más Detalles...</button>
+                    <!-- Button trigger modal -->
+                    <button (click)="detallePers(personaje)" class="btn"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Más Detalles...</button>
                 </div>
             </div>
         </div>
-
-        <!-- Button trigger modal -->
+        
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog  modal-dialog-centered  modal-xl">
@@ -98,8 +98,8 @@
                                     <div class="detallesModal  text-white p-2" style="max-width: 100%; font-size: 1.15rem; ">
                                         <div class="row g-3 ">
                                             
-                                            <div class="col-md-4 align-self-center imgCard ">
-                                                <img [src]="PersonajeModal.image" appImageDefault class="align-self-center" style="width:100%; "
+                                            <div class="col-md-4  imgModal ">
+                                                <img [src]="PersonajeModal.image" appImageDefault  style="width:100%; "
                                                     [alt]="PersonajeModal.name">
                                             </div>
                                             <div class="col-md-8 ">

@@ -232,7 +232,7 @@ section {
     .modal-content {
         background-color: rgba(0, 0, 0, 0.834);
         color: white;
-        border: solid 2px rgb(24, 119, 221);
+        border: double 5px rgb(24, 119, 221);
 
         .modal-header {
             padding: 5px 10px;
@@ -254,20 +254,23 @@ section {
 
             .detallesModal {
                 background-color: rgb(39, 38, 38);
-                font-family: 'Old Standard TT',
-                    serif;
+                font-family: 'Old Standard TT', serif;
 
-                &:hover {
-                    box-shadow: none;
-                }
-
-                .imgCard {
+                .imgModal {
                     display: flex;
                     justify-content: center;
 
                     img {
                         max-width: 330px;
+                        max-height: 500px;
                         object-fit: contain;
+                    }
+                }
+                @media only screen and (max-width: 750px){
+                    .imgModal{
+                        img{
+                            max-height: 370px;
+                        }
                     }
                 }
 
