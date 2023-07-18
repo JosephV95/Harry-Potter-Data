@@ -85,7 +85,6 @@ export class CharactersComponent {
   detallePers(persona:object){
     console.log(this.PersonajeModal);
     this.PersonajeModal = persona
-    
   }
 
   //* Funcion que cambiara de pagina la pagination y desplazara la pantalla hacia arriba, al inicio de las cards. Mediante un #InicioCards puesto en el input de busqueda(puesto allí porque el nav tapa las primeras cards)
