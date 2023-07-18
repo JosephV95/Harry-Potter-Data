@@ -87,4 +87,11 @@ export class CharactersComponent {
     this.PersonajeModal = persona
     
   }
+
+  //* Funcion que cambiara de pagina la pagination y desplazara la pantalla hacia arriba, al inicio de las cards. Mediante un #InicioCards puesto en el input de busqueda(puesto allí porque el nav tapa las primeras cards)
+  cambiarPag(nPage:number, InicioCards:HTMLElement){
+    this.p = nPage;
+    InicioCards.scrollIntoView({behavior: 'smooth'});
+    // window.scrollTo(0,245)  //*Otra alternatina para desplazar la pantalla al inicio de las cards
+  }
 }
