@@ -16,7 +16,8 @@ import { ImageDefaultDirective } from './directivas/image-default.directive';
 import { DetallePersComponent } from './componentes/detalle-pers/detalle-pers.component';
 import { FormsModule } from '@angular/forms';
 // import { NgOptimizedImage } from '@angular/common'; //Necesario para el lazy loading de las imagenes(las imagenes se iran cargando mediante el scroll este cerca - mejora el tiempo de carga de la web)
-import {NgxPaginationModule} from 'ngx-pagination'; //Importación necesaria para la paginación en characters (desde npgx pagination)
+import {NgxPaginationModule} from 'ngx-pagination';
+import { NotPageFoundComponent } from './componentes/not-page-found/not-page-found.component'; //Importación necesaria para la paginación en characters (desde npgx pagination)
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {NgxPaginationModule} from 'ngx-pagination'; //Importación necesaria par
     HomeComponent,
     AboutComponent,
     ImageDefaultDirective,
-    DetallePersComponent
+    DetallePersComponent,
+    NotPageFoundComponent
   ],
   imports: [
     BrowserModule,

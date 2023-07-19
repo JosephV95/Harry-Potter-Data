@@ -1,0 +1,31 @@
+
+#contenedor404{
+    margin: 1rem 0;
+    background-color: black;
+    min-height: 60vh;
+    // width: 100%;
+    background-image: url(../../../assets/error404.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+    font-family: 'Benne', serif;
+    text-shadow: 0 0 15px rgb(39, 197, 255), 0 0 20px rgb(39, 197, 255), 0 0 20px rgb(39, 197, 255);
+
+    #texto404{
+        span{
+            text-shadow: 0 0 15px red, 0 0 20px red, 0 0 20px red;;
+        }
+    }
+}
