@@ -5,6 +5,7 @@ import { CharactersComponent } from './componentes/characters/characters.compone
 import { SpellListComponent } from './componentes/spell-list/spell-list.component';
 import { AboutComponent } from './componentes/about/about.component';
 import { DetallePersComponent } from './componentes/detalle-pers/detalle-pers.component';
+import { NotPageFoundComponent } from './componentes/not-page-found/not-page-found.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -13,7 +14,7 @@ const routes: Routes = [
   {path:'spells', component:SpellListComponent},
   {path:'about', component:AboutComponent},
   {path:'detail/:id', component:DetallePersComponent},
-  // {path:'**', component:AboutComponent},   terminar para elcrear la pagina 404
+  {path:'**', component:NotPageFoundComponent}   //*  Se debe poner al final la ruta para el erros 404 para que no afecte el funcionamiento de la web
 ];
 
 @NgModule({
