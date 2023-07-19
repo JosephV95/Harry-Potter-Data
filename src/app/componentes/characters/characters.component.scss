@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Benne&family=Old+Standard+TT&family=Tangerine:wght@700&display=swap');
-
 section {
     margin-top: 1rem;
     padding-bottom: 1rem;
@@ -173,7 +171,6 @@ section {
     }
 
     pagination-controls {
-        // background-image: linear-gradient(to bottom, #f1f0edee 60%, rgba(0, 0, 0, 0.278) 100%);
         background-image: url(../../../assets/fondo_pagination.png);
         background-size: auto;
         background-repeat: no-repeat;
@@ -181,8 +178,6 @@ section {
         font-size: 1.15rem;
         font-family: 'Old Standard TT', serif;
         height: 35px;
-        // border-bottom-left-radius: 20px;
-        // border-bottom-right-radius: 20px;
         margin-top: 15px;
         padding-right: 2rem;
     }
@@ -206,7 +201,6 @@ section {
 
         label {
             margin: 0 5px;
-            // display: inline;
         }
 
         #categorias {
