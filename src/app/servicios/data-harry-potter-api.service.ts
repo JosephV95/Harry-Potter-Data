@@ -16,7 +16,7 @@ export class DataHarryPotterApiService {
 
   obtenerPersonajes(): Observable<any>{
 
-    console.log("Todo esta funcionando");
+    // console.log("Todo esta funcionando");
 
     return this.httpApi.get(this.urlApi)
   }
