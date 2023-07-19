@@ -10,15 +10,16 @@ export class DataHarryPotterApiService {
   // Url original de la API, se copiara sus datos en json para ahorar recursos y trabajar de forma local
   // urlApi = 'https://hp-api.onrender.com/api/characters';
   
-  urlApi = 'assets/dataAPI/harryApiES.json/';
+  urlApi = 'assets/dataAPI/harryApiES.json';
   
   constructor(private httpApi:HttpClient) { }
 
   obtenerPersonajes(): Observable<any>{
 
     // console.log("Todo esta funcionando");
-
-    return this.httpApi.get(this.urlApi)
+    
+    //*Se debio indicar el tipo de response para que el hosting de firebase(creo) lo reconosca como json y pueda mostrar la información en la web online y no salte errores
+    return this.httpApi.get(this.urlApi, {responseType: 'json'}) 
   }
 
   // ! esta seria la funcion para traer un personaje desde la api, pero no traeria las img que puse a las cards que no tenian
