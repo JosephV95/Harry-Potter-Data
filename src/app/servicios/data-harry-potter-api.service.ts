@@ -19,7 +19,7 @@ export class DataHarryPotterApiService {
     // console.log("Todo esta funcionando");
     
     //*Se debio indicar el tipo de response para que el hosting de firebase(creo) lo reconosca como json y pueda mostrar la información en la web online y no salte errores
-    return this.httpApi.get(this.urlApi, {responseType: 'json'}) 
+    return this.httpApi.get(this.urlApi, {responseType: 'json'})
   }
 
   // ! esta seria la funcion para traer un personaje desde la api, pero no traeria las img que puse a las cards que no tenian
