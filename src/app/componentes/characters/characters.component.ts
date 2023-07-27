@@ -83,7 +83,7 @@ export class CharactersComponent {
   PersonajeModal:any = {}
 
   detallePers(persona:object){
-    console.log(this.PersonajeModal);
+    // console.log(this.PersonajeModal);
     this.PersonajeModal = persona
   }
 
